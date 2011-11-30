@@ -1,0 +1,7 @@
+== Requirements
+* Highline gem
+* Mechanize gem
+
+== TODO
+* Get all 4 pages of transactions
+* Rails: lots
