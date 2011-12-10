@@ -102,17 +102,19 @@ class CaixaGeralDepositos
 
         ret
 
-    def cached_res
-        [
-            ["29-11-11", "", "-13,85 EUR", "Others"],
-            ["28-11-11", "TRANSACCAO A DEBITO EM ATM:CC Campo Pequ", "-10,00 EUR", "MB"],
-            ["26-11-11", "JOSHUA'S SHOARMA 2696-017 ALCABIDEC", "-12,30 EUR", "Food"],
-            ["26-11-11", "FARMACIA ALCOITAO LJ 0089-ALCABIDECH", "-4,70 EUR", "Others"],
-            ["26-11-11", "CINEMA CASCAIS ESTORIL", "-6,10 EUR", "FUN"],
-            ["25-11-11", "CREPELOVE//QUIPIZZA LISBOA", "-14,30 EUR", "Food"],
-            ["24-11-11", "MESTRE&MESTRE LDA LISBOA", "-14,50 EUR", "Others"],
-            ["23-11-11", "M.V.SOUSA, LDA. 1700 LISBOA", "-19,32 EUR", "Others"]
-        ]
     end
+=begin
+    Example result dataset
+      [
+          ["29-11-11", "", "-13,85 EUR", "Others"],
+          ["28-11-11", "TRANSACCAO A DEBITO EM ATM:CC Campo Pequ", "-10,00 EUR", "MB"],
+          ["26-11-11", "JOSHUA'S SHOARMA 2696-017 ALCABIDEC", "-12,30 EUR", "Food"],
+          ["26-11-11", "FARMACIA ALCOITAO LJ 0089-ALCABIDECH", "-4,70 EUR", "Others"],
+          ["26-11-11", "CINEMA CASCAIS ESTORIL", "-6,10 EUR", "FUN"],
+          ["25-11-11", "CREPELOVE//QUIPIZZA LISBOA", "-14,30 EUR", "Food"],
+          ["24-11-11", "MESTRE&MESTRE LDA LISBOA", "-14,50 EUR", "Others"],
+          ["23-11-11", "M.V.SOUSA, LDA. 1700 LISBOA", "-19,32 EUR", "Others"]
+      ]
+=end
 
 end
