@@ -9,6 +9,14 @@ DICT = [
     [/JOSHUA'S SHOARMA/, "Isrealita", "Food"],
     [/TRANSACCAO A DEBITO EM ATM/, "MB", "MB"],
     [/CINEMA/, "CINEMA", "FUN"],
+    [/PANS & COMPANY/, "Food", "Food"],
+    [/CAFE 3 RESTAURACAO/, "H3", "Food"],
+    [/RESTAURANTE/, "Food", "Food"],
+    [/WOK NAGASAKI/, "Food", "Food"],
+    [/WOK TO WALK/, "Food", "Food"],
+    [/CASCATA VASCO GAMA RIO DE MOURO/, "Food", "Food"],
+    [/M AMELIA E FILHO,LDAERICEIRA/, "Galp Ericeira", "Gas"],
+    [/WWW CP PT/, "CP", "Services"],
 ]
 
 class CaixaGeralDepositos
