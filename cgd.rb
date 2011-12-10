@@ -88,17 +88,19 @@ class CaixaGeralDepositos
     def extract_transactions
 
         paths = ["/html/body/b[2]", "/html/body/b[6]", "/html/body/b[4]"]
+        ret = []
 
-        page = @agent.get('https://m.caixadirecta.cgd.pt/pocketBank/PosicaoGlobal.action')
-        movimentos = page.links[3].click
-        compras_levs = movimentos.links.select {|p| p.text.strip.match(/^(COMPRA|LEVANTAMENTO)+/) }
+        4.times do |i|
+            movimentos = @agent.get("https://m.caixadirecta.cgd.pt/pocketBank/Movimentos.action?searchPeriod=0&page=#{i+1}&queryId=511")
+            compras_levs = movimentos.links.select {|p| p.text.strip.match(/^(COMPRA|LEVANTAMENTO)+/) }
 
-        compras_levs.collect  do |compra_page|
-            compra = compra_page.click
-            paths.collect {|b| compra.parser.xpath(b).text.strip}
+            ret = ret + compras_levs.collect  do |compra_page|
+                compra = compra_page.click
+                paths.collect {|b| compra.parser.xpath(b).text.strip}
+            end
         end
 
-    end
+        ret
 
     def cached_res
         [
